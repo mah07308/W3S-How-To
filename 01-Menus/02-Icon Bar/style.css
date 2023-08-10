@@ -1,0 +1,65 @@
+/* VERTICAL ALIGNMENT */
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.icon-bar {
+  width: 90px;
+  background-color: #555;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04aa6d;
+} */
+
+/* HORIZONTAL ALIGNMENT */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.icon-bar a {
+  text-align: center;
+  width: 20%;
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04aa6d;
+}
