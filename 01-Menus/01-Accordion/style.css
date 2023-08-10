@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 50rem;
+  width: 50rem;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font: inherit;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* .panel {
+  padding: 0 1rem;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+} */
+
+/* For animated slide-down accordion */
+
+.panel {
+  padding: 0 1rem;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* Add a symbol to each button to indicate whether the collapsible content is open or closed: */
+
+.accordion:after {
+  content: '\02795';
+  font-size: 0.8rem;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2796';
+}
